@@ -6,113 +6,99 @@
   </head>
   <body>
     <header>
-      <div class="header_container">
+      <div class="container">
         <img class="logo" src="#">
         <nav>
           <ul>
-            <li>Каталог</li>
-            <li>Доставка и оплата</li>
-            <li>О компании</li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <div class="user_block">
-          <a href="#"></a>
-          <a href="#">Вход</a>
-          <a >Пусто</a>
+          <a href="#" class="user_block_search"></a>
+          <a href="#" class="user_block_enter">Вход</a>
+          <a href="#" class="user_block_basket">Пусто</a>
+        </div>
+        <div class="work_time">
+            <p>C 10 до 20, ежедневно<br>
+            <b>8 812 450 25-25</b></p>
         </div>
       </div>
     </header>
-    <main>
-    <!-- Здесь слайдер, но я не могу сообразить, как его лучше сделать.!-->
-     <div class="slider_container">
-      <div class="work_time">
-          <p>C 10 до 20, ежедневно<br>
-          <b>8 812 450 25-25</b></p>
-      </div>
-
-      <div class="slider_preview">
-        <h1>Крембрюле и пломбир с малиновым джемом</h1>
-        <a class="get_icecream" href="#">Давайте оба!</a>
-      </div>
+    <main class="container">
+     <div class="cont_top">
+      <form action="#" method="get">
+        <h1>Крем брюле и пломбир<br> с малиновым джемом</h1>
+        <input type="radio" checked>
+        <input type="radio">
+        <input type="radio">
+        <button type="submit">Давайте оба!</button>
+      </form>
     </div>
-    <div class="promo_container">
-      <div class="rasp_block">
+    <div class="cont_middle">
+      <section class="rasp_block">
         <b>Малинка даром!</b>
         <p>При покупке 2кг любого фруктового мороженого,
            добавим в ваш заказ банку малинового варенья бемплатно</p>
         <a class="btn_style" href="#">Хочу варенье!</a>
-      </div>
-      <div class="choco_block">
+      </section>
+      <section class="choco_block">
         <b>Шоколадки даром!</b>
         <p>При покупки 2кг пломбира, добавим в ваш заказ упаковку
           вкуснейшей шоколадной присыпки совершенно бесплатно</p>
         <a class="btn_style" href="#">Хочу шоколадки!</a>
-      </div>
-    </div>
-    <div class="pop_container">
-      <ul>
-        <li>
+      </section>
+      <div class="pop_container">
+        <article>
           <div class="pop_block_hit">Хит</div>
           <div class="pop_block_img_citrus"></div>
           <div class="pop_block_price">310&#8381/кг</div>
           <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-        </li>
-        <li>
+        </article>
+        <article>
           <div class="pop_block_hit">Хит</div>
           <div class="pop_block_img_cofe"></div>
           <div class="pop_block_price">380&#8381/кг</div>
           <span>Сливочно-кофейное с кусочками шоколада</span>
-        </li>
-        <li>
+        </article>
+        <article>
           <div class="pop_block_hit">Хит</div>
           <div class="pop_block_img_straw"></div>
           <div class="pop_block_price">355&#8381/кг</div>
           <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-        </li>
-        <li>
+        </article>
+        <article>
           <div class="pop_block_hit">Хит</div>
           <div class="pop_block_img_cream"></div>
           <div class="pop_block_price">415&#8381/кг</div>
           <span>Сливочное крем-брюле с карамельной подливкой</span>
-        </li>
-      </ul>
-    </div>
-    <div class="shop_container">
+        </article>
+      </div>
       <div class="shop_about">
-        <b>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного
-            собственного производства на разновес</b>
+        <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного
+            собственного производства на разновес</h2>
         <div class="shop_about_left">
-          <ul>
-            <li>
-              <div class="shop_about_left_icon1"></div>
-              <p>Все наше мороженое изготавливается на собственном производстве,
+          <div class="shop_about_left_icon1"></div>
+            <p>Все наше мороженое изготавливается на собственном производстве,
                  с использованием современного оборудования и проверенных временем
                  технологий.</p>
-            </li>
-            <li>
-              <div class="shop_about_left_icon2"></div>
-              <p>Для приготовления мороженого используются настоящие сливки и
+            <div class="shop_about_left_icon2"></div>
+            <p>Для приготовления мороженого используются настоящие сливки и
                  молоко высочайшего качества. Все дополнительные ингридиенты и
                  добавки произведены из натурального, экологически чистого
                  сырья</p>
-            </li>
-          </ul>
         </div>
         <div class="shop_about_right">
-          <ul>
-            <li>
-              <div class="shop_about_right_icon1"></div>
-              <p>Закупка ингридиентов производится только у проверенных
+          <div class="shop_about_right_icon1"></div>
+          <p>Закупка ингридиентов производится только у проверенных
                  фермерских хозяйств и компаний, с которыми нас связывает
                  долговременное сотрудничество.</p>
-            </li>
-            <li>
-              <div class="shop_about_right_icon2"></div>
-              <p>Доставка нашего мороженного до заказчика осуществляется
+
+          <div class="shop_about_right_icon2"></div>
+          <p>Доставка нашего мороженного до заказчика осуществляется
                  в термопаке, которая не дает мороженому растаять в пути
                  и позволяет ему сохранить свой превосходный вкус</p>
-            </li>
-          </ul>
         </div>
       </div>
       <div class="shop_about_new">
@@ -125,11 +111,11 @@
            и не слать всякой не нужной ерунды. Честно =)</p>
         <form method="get" action="#">
           <input type="text" name="mail" placeholder="Электронная почта">
-          <button class="btn_style">Отправить<button>
+          <button type="submit" class="btn_style">Отправить</button>
         </form>
       </div>
     </div>
-    <div class="map_block">
+    <div class="container_bottom">
       <div class="map_block_address">
         <p>Адрес главного офиса и<br>
            офлайн магазина:<br>
