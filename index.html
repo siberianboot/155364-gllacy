@@ -3,22 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css\style.css"
   </head>
   <body>
     <header class="main_header">
       <div class="container">
-        <img class="logo" src="#">
         <nav class="main_navigation">
           <ul>
+            <li class="logo"><img src="img\logo154-64.png"></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <div class="user_block">
-          <input type="search" class="user_block_search">
-          <a href="#" class="user_block_enter">Вход</a>
-          <a href="#" class="user_block_basket">Пусто</a>
+          <div class="user_block_search">
+            <img src="img\icon\loup.png">
+            <input type="search" class="user_block_search">
+          </div>
+          <div class="user_block_enter">
+            <img src="img\icon\enter21-19.png">
+            <a href="#">Вход</a>
+          </div>
+          <div class="user_block_basket">
+            <img src="img\icon\basket21-20.png">
+            <a href="#">Пусто</a>
+          </div>
         </div>
         <div class="work_time">
             C 10 до 20, ежедневно
@@ -27,87 +37,90 @@
       </div>
     </header>
     <main class="container">
-      <form action="#" method="get">
-        <input type="radio" checked>
-        <input type="radio">
-        <input type="radio">
-      </form>
-     <div class="main_slider">
-      <h1>Крем брюле и пломбир<br> с малиновым джемом</h1>
-      <a href="#">Давайте оба!</a>
-    </div>
-    <div class="cont_middle">
+      <div class="slider_control">
+        <div class="slider_control_btn"></div>
+        <div class="slider_control_btn"></div>
+        <div class="slider_control_btn"></div>
+      </div>
+      <div class="main_slider">
+        <h1>Крем брюле и пломбир с малиновым джемом</h1>
+        <a href="#" class="main_btn">Давайте оба!</a>
+      </div>
       <section class="main_actions">
-        <div class="rasp_block">
-         <h3>Малинка даром!</h3>
+        <article class="rasp_block">
+         <h2>Малинка даром!</h2>
          <p>При покупке 2кг любого фруктового мороженого,
            добавим в ваш заказ банку малинового варенья бемплатно</p>
          <a class="btn_style" href="#">Хочу варенье!</a>
-       </div>
-       <div class="choco_block">
-         <h3>Шоколадки даром!</h3>
+       </article>
+       <article class="choco_block">
+         <h2>Шоколадки даром!</h2>
          <p>При покупки 2кг пломбира, добавим в ваш заказ упаковку
           вкуснейшей шоколадной присыпки совершенно бесплатно</p>
          <a class="btn_style" href="#">Хочу шоколадки!</a>
-       </div>
+       </article>
       </section>
-      <div class="catalog_item">
+      <section class="catalog_item">
         <article class="catalog_icecream">
-          <div class="pop_block_hit">Хит</div>
-          <img src="#" width="150px" height="150px" class="catalog_img_citrus">
+          <img src="img\icon\hit.png">
+          <img src="img\citrus.png" width="200px" height="200px" class="catalog_img_citrus">
           <div class="pop_block_price">310&#8381/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </article>
         <article class="catalog_icecream">
-          <div class="pop_block_hit">Хит</div>
-          <img src="#" width="150px" height="150px" class="catalog_img_cofe">
+          <img src="img\icon\hit.png">
+          <img src="img\choco.png" width="200px" height="200px" class="catalog_img_cofe">
           <div class="pop_block_price">380&#8381/кг</div>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </article>
         <article class="catalog_icecream">
-          <div class="pop_block_hit">Хит</div>
-          <img src="#" width="150px" height="150px" class="catalog_img_straw">
+          <img src="img\icon\hit.png">
+          <img src="img\straw.png" width="200px" height="200px" class="catalog_img_straw">
           <div class="pop_block_price">355&#8381/кг</div>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </article>
         <article class="catalog_icecream">
-          <div class="pop_block_hit">Хит</div>
-          <img src="#" width="150px" height="150px" class="catalog_img_cream">
+          <img src="img\icon\hit.png">
+          <img src="img\cream.png" width="200px" height="200px" class="catalog_img_cream">
           <div class="pop_block_price">415&#8381/кг</div>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </article>
-      </div>
+      </section>
       <div class="shop_about">
-        <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного
-            собственного производства на разновес</h2>
-        <div class="shop_about_left">
-          <div class="icon_icecream_left1"></div>
-            <p>Все наше мороженое изготавливается на собственном производстве,
+        <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного
+            собственного производства на разновес</h3>
+        <div class="icon_icecream_left1">
+          <img src="img\icon\icecream49-49.png">
+          <p>Все наше мороженое изготавливается на собственном производстве,
                  с использованием современного оборудования и проверенных временем
                  технологий.</p>
-            <div class="icon_icecream_left2"></div>
-            <p>Для приготовления мороженого используются настоящие сливки и
+        </div>
+        <div class="icon_icecream_left2">
+          <img src="img\icon\leaf49-49.png">
+          <p>Для приготовления мороженого используются настоящие сливки и
                  молоко высочайшего качества. Все дополнительные ингридиенты и
                  добавки произведены из натурального, экологически чистого
                  сырья</p>
         </div>
         <div class="shop_about_right">
-          <div class="icon_icecream_right1"></div>
-          <p>Закупка ингридиентов производится только у проверенных
+          <div class="icon_icecream_right1">
+            <img src="img\icon\cow49-49.png">
+            <p>Закупка ингридиентов производится только у проверенных
                  фермерских хозяйств и компаний, с которыми нас связывает
                  долговременное сотрудничество.</p>
-
-          <div class="icon_icecream_right2"></div>
-          <p>Доставка нашего мороженного до заказчика осуществляется
+          </div>
+          <div class="icon_icecream_right2">
+            <img src="img\icon\term48-49.png">
+            <p>Доставка нашего мороженного до заказчика осуществляется
                  в термопаке, которая не дает мороженому растаять в пути
                  и позволяет ему сохранить свой превосходный вкус</p>
+          </div>
         </div>
       </div>
-      <div class="shop_about">
+      <div class="shop_news">
         <div class="shop_about_new">
-          <h3>Новое в нашем блоге</h3>
+          <span>Новое в нашем блоге</span>
           <a href="#">10 способов сервировки готовых щербетов к столу</a>
-          <img src="#">
         </div>
         <div class="shop_about_subscribe">
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
@@ -120,7 +133,7 @@
          </div>
       </div>
     </div>
-    <div class="container_bottom">
+    <div class="container_map">
       <div class="map_block_address">
         <p>Адрес главного офиса и
            офлайн магазина:
@@ -134,25 +147,23 @@
   </main>
   <footer>
     <div class="social_block">
-      <a href="#"><div class="soc_btn twitter"></div></a>
-      <a href="#"><div class="soc_btn insta"></div></a>
-      <a href="#"><div class="soc_btn facebook"></div></a>
-      <a href="#"><div class="soc_btn pasha"></div></a>
+      <a href="#"><img src="img\icon\twitter39-38.png"></a>
+      <a href="#"><img src="img\icon\insta38-38.png"></a>
+      <a href="#"><img src="img\icon\fb38-38.png"></div></a>
+      <a href="#"><img src="img\icon\vk38-38.png"></div></a>
     </div>
     <div class="documents_block">
-      <div class="documents_block_provider_heart"></div>
-      <a href=#>Для поставщиков</a><br>
+      <div class="documents_block_provider_heart">
+        <img src="img\icon\heart15-13.png">
+        <a href=#>Для поставщиков</a>
+      </div>
       <a href=#>О производстве</a>
       <a href="#">Наши документы</a><br>
       <a href="#">Экологические стандарты</a>
     </div>
     <div class="academy_block">
-      <a href="#">
-        <div class="academy_block_logo">
-          <b>html<br>academy</b>
-        </div>
-      </a>
-      <p>Сделано в <a href="#">HTML Academy</a> &#169 2016
+      <a href="#"><img src="img\htmllogo108-38.png"></a>
+      <p>Сделано в <a href="#">HTML Academy</a> &#169 2016</p>
     </div>
   </footer>
  </body>
