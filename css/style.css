@@ -1,19 +1,205 @@
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 body {
-  font-family: Roboto Bold;
+  font-family: 'RobotoBold';
   font-size: 16px;
   line-height: 22px;
+  background-color: #849d8f;
+  padding: 0px;
+  margin: 0px;
 }
 h1 {
   font-size: 60px;
   color: white;
-  text-shadow: 1px 1px 1px black;
 }
 h2 {
   font-size: 35px;
   color: white;
-  text-shadow: 1px 1px 1px black;
 }
 h3 {
   font-size: 24px;
   color: #323232;
+}
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+  min-width: 900px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 0, 0, 0.1);
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+.main_navigation ul {
+  display: flex;
+}
+.main_navigation li {
+  list-style: none;
+  align-self: center;
+  margin-right: 28px;
+}
+.main_navigation li:first-child {
+  margin-left: -48px;
+}
+.main_navigation a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+.user_block {
+  display: flex;
+  align-items: center;
+}
+.user_block div {
+  margin-left: 10px;
+}
+.user_block a {
+  text-decoration: none;
+  color: white;
+}
+.work_time {
+  width: 180px;
+  color: white;
+  margin-left: auto;
+}
+.main_slider {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 220, 0, 0.1);
+}
+.slider_items {
+  width: 670px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider_items h1 {
+  line-height: 60px;
+}
+.slider_control {
+  display: flex;
+  background-color: rgba(155, 50, 220, 0.1);
+}
+.slider_control_btn {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.main_actions {
+  display: flex;
+  justify-content: space-between;
+}
+.main_actions_block {
+  min-width: 420px;
+  max-width: 560px;
+  width: 100%;
+  background-color: rgba(134, 34, 45, 0.1);
+}
+.main_catalog_item {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(234, 234, 245, 0.1);
+}
+.catalog_item {
+  width: 265px;
+}
+.main_shop_about {
+  background-color: rgba(3, 2, 1, 0.1);
+}
+.shop_about_container {
+  display: flex;
+}
+.icon_icecream_left {
+  width: 560px;
+}
+.icon_icecream_right {
+  width: 560px;
+}
+.icon_icecream_left img {
+  float: left;
+}
+.icon_icecream_right img {
+  float: left;
+}
+.shop_blog {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(1, 1, 1, 0.3);
+}
+.shop_blog_new,
+.shop_blog_subscribe {
+  width: 560px;
+  background-color: rgba(200, 5, 200, 0.3)
+}
+.container_map {
+  border: 1px solid rgba(255, 255, 255, 0.0);
+  height: 430px;
+  background-color: rgba(100, 5, 50, 0.3)
+}
+.map_block_address {
+  width: 295px;
+  margin: 66px 27px 0px auto;
+  background-color: rgba(5, 125, 50, 0.3)
+}
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog_navigation li {
+  display: inline-block;
+  color: white;
+}
+.catalog_navigation a {
+  color: white;
+}
+.catalog_navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(5, 5, 250, 0.6)
+}
+.main_form {
+  width: 850px;
+  margin-right: auto;
+  background-color: rgba(225, 5, 250, 0.2)
+}
+.icecream_sorting {
+  display: flex;
+}
+.price_control {
+  display: flex;
+}
+.richness_control {
+  display: flex;
+}
+.fillers_control {
+  display: flex;
+}
+.top_flex_cont {
+  display: flex;
+}
+.row_container {
+  display: flex;
+  background-color: rgba(5, 5, 20, 0.2)
+}
+.catalog_control_btns {
+  width: 250px;
+  margin-left: auto;
 }
