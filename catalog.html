@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Глэйси</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -40,7 +41,9 @@
       <div class="breadcrumb">
         <ul>
           <li><a href="#">Главная</a></li>
+          <li class="breadcrumb_decor">&raquo</li>
           <li><a href="#">Каталог</a></li>
+          <li class="breadcrumb_decor">&raquo</li>
           <li>Сливочное</li>
         </ul>
     </div>
@@ -48,21 +51,21 @@
       <form action="#" method="get" class="main_form">
           <div class="filter_item">
             <h5>Сортировка:</h5>
-            <div class="filter_label">
-              <select class="icecream_sorting">
+            <div class="filter_item">
+              <select class="select_styled">
                 <option>по популярности</option>
                 <option>по цене</option>
                 <option>по имени</option>
               </select>
             </div>
           </div>
-          <div class="filter_price">
+          <div class="filter_item">
             <h5>Цена: 100 руб. - 500 руб.</h5>
             <div class="filter_label">
               <div></div>
             </div>
           </div>
-          <div class="filter_radio">
+          <div class="filter_item">
             <h5>Жирность:</h5>
             <div class="filter_label">
               <input type="radio" id="zero_percent">
@@ -75,7 +78,7 @@
               <label for="overthirty_percent">выше 30%</label>
             </div>
           </div>
-        <div class="filter_ckbx">
+        <div class="filter_item">
           <h5>Наполнители:</h5>
           <div class="filter_label">
             <input type="checkbox" id="choco_cont" checked>
@@ -88,11 +91,11 @@
             <label for="syrup_cont">сироп</label>
             <input type="checkbox" id="jam_cont">
             <label for="jam_cont">джем</label>
+            <button type="submit" class="filter_btn">Применить</button>
           </div>
         </div>
-        <button type="submit" class="filter_btn">Применить</button>
       </form>
-      <section class="item_container">
+      <section class="item_container clearfix">
         <article class="catalog_item">
           <img src="img/citrus.png" width="265px" height="265px" class="catalog_img">
           <div class="catalog_price">310&#8381/кг</div>
