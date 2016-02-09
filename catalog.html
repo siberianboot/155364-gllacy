@@ -12,7 +12,7 @@
         <img src="img/logo154-64.png" class="main_logo">
         <nav class="main_navigation">
           <ul>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="#" class="visit_page">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О компании</a></li>
           </ul>
@@ -51,7 +51,7 @@
       <form action="#" method="get" class="main_form">
           <div class="filter_item">
             <h5>Сортировка:</h5>
-            <div class="filter_item">
+            <div class="filter_label">
               <select class="select_styled">
                 <option>по популярности</option>
                 <option>по цене</option>
@@ -62,7 +62,13 @@
           <div class="filter_item">
             <h5>Цена: 100 руб. - 500 руб.</h5>
             <div class="filter_label">
-              <div></div>
+              <div class="range_filter">
+                <div class="scale"><div style="width: 70%;" class="bar"></div></div>
+                <div class="toggle min_toggle">
+                </div>
+                <div class="toggle max_toggle">
+                </div>
+              </div>
             </div>
           </div>
           <div class="filter_item">
@@ -174,14 +180,10 @@
           <a href="#"><img src="img/icon/vk38-38.png"></a>
         </div>
         <div class="documents_block">
-          <div class="documents_block_left">
-            <a href=#>Для поставщиков</a>
-            <a href=#>О производстве</a>
-          </div>
-          <div class="documents_block_right">
+            <a href=# class="heart_marker">Для поставщиков</a>
             <a href="#">Наши документы</a>
+            <a href=#>О производстве</a>
             <a href="#">Экологические стандарты</a>
-          </div>
         </div>
         <div class="academy_block">
           <a href="#"><img src="img/htmllogo108-38.png"></a>
