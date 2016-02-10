@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог Глэйси</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,15 +20,13 @@
         </nav>
         <div class="user_block">
           <div class="user_block_search">
-            <img src="img/icon/loup.png">
-            <input type="search" class="user_block_search">
+            <div class="search_icon"></div>
+            <input type="search" class="input_block_search">
           </div>
           <div class="user_block_enter">
-            <img src="img/icon/enter21-19.png">
             <a href="#">Вход</a>
           </div>
           <div class="user_block_basket">
-            <img src="img/icon/basket21-20.png">
             <a href="#">Пусто</a>
           </div>
         </div>
@@ -46,7 +45,7 @@
           <li class="breadcrumb_decor">&raquo</li>
           <li>Сливочное</li>
         </ul>
-    </div>
+      </div>
       <h1>Сливочное мороженое</h1>
       <form action="#" method="get" class="main_form">
           <div class="filter_item">
@@ -55,7 +54,7 @@
               <select class="select_styled">
                 <option>по популярности</option>
                 <option>по цене</option>
-                <option>по имени</option>
+                <option>по названию</option>
               </select>
             </div>
           </div>
@@ -64,42 +63,58 @@
             <div class="filter_label">
               <div class="range_filter">
                 <div class="scale"><div style="width: 70%;" class="bar"></div></div>
-                <div class="toggle min_toggle">
-                </div>
-                <div class="toggle max_toggle">
-                </div>
+                <div class="toggle min_toggle"></div>
+                <div class="toggle max_toggle"></div>
               </div>
             </div>
           </div>
           <div class="filter_item">
             <h5>Жирность:</h5>
-            <div class="filter_label">
-              <input type="radio" id="zero_percent">
-              <label for="zero_percent">0%</label>
-              <input type="radio" id="ten_percent" checked>
-              <label for="ten_percent">10%</label>
-              <input type="radio" id="thirty_percent">
-              <label for="thirty_percent">30%</label>
-              <input type="radio" id="overthirty_percent">
-              <label for="overthirty_percent">выше 30%</label>
+            <div class="filter_radio">
+              <label for="zero_percent">0%
+                <input type="radio" id="zero_percent" name="form_radio_btn">
+                <span class="radio_indicator"></span>
+              </label>
+              <label for="ten_percent">10%
+                <input type="radio" id="ten_percent" name="form_radio_btn" checked>
+                <span class="radio_indicator"></span>
+              </label>
+              <label for="thirty_percent">30%
+                <input type="radio" id="thirty_percent" name="form_radio_btn">
+                <span class="radio_indicator"></span>
+              </label>
+              <label for="overthirty_percent">выше 30%
+                <input type="radio" id="overthirty_percent" name="form_radio_btn">
+                <span class="radio_indicator"></span>
+              </label>
             </div>
           </div>
         <div class="filter_item">
           <h5>Наполнители:</h5>
-          <div class="filter_label">
-            <input type="checkbox" id="choco_cont" checked>
-            <label for="choco_cont">шоколадные</label>
-            <input type="checkbox" id="sugar_cont" checked>
-            <label for="sugar_cont">сахарные присыпки</label>
-            <input type="checkbox" id="fruit_cont">
-            <label for="fruit_cont">фрукты</label>
-            <input type="checkbox" id="syrup_cont">
-            <label for="syrup_cont">сироп</label>
-            <input type="checkbox" id="jam_cont">
-            <label for="jam_cont">джем</label>
-            <button type="submit" class="filter_btn">Применить</button>
+          <div class="filter_chbx">
+            <label for="choco_cont">шоколадные
+              <input type="checkbox" id="choco_cont" name="form_chbx_btn" checked>
+              <span class="chbx_indicator"></span>
+            </label>
+            <label for="sugar_cont">сахарные присыпки
+              <input type="checkbox" id="sugar_cont" name="form_chbx_btn" checked>
+              <span class="chbx_indicator"></span>
+            </label>
+            <label for="fruit_cont">фрукты
+              <input type="checkbox" id="fruit_cont" name="form_chbx_btn">
+              <span class="chbx_indicator"></span>
+            </label>
+            <label for="syrup_cont">сироп
+              <input type="checkbox" id="syrup_cont" name="form_chbx_btn">
+              <span class="chbx_indicator"></span>
+            </label>
+            <label for="jam_cont">джем
+              <input type="checkbox" id="jam_cont" name="form_chbx_btn">
+              <span class="chbx_indicator"></span>
+            </label>
           </div>
         </div>
+        <button type="submit" class="filter_btn">Применить</button>
       </form>
       <section class="item_container clearfix">
         <article class="catalog_item">
@@ -174,10 +189,10 @@
     <footer class="main_footer">
       <div class="container  clearfix">
         <div class="social_block">
-          <a href="#"><img src="img/icon/twitter39-38.png"></a>
-          <a href="#"><img src="img/icon/insta38-38.png"></a>
-          <a href="#"><img src="img/icon/fb38-38.png"></a>
-          <a href="#"><img src="img/icon/vk38-38.png"></a>
+          <a href="#"><div class="twitter_block"></div></a>
+          <a href="#"><div class="insta_block"></div></a>
+          <a href="#"><div class="fb_block"></div></a>
+          <a href="#"><div class="pasha_block"></div></a>
         </div>
         <div class="documents_block">
             <a href=# class="heart_marker">Для поставщиков</a>
@@ -187,7 +202,7 @@
         </div>
         <div class="academy_block">
           <a href="#"><img src="img/htmllogo108-38.png"></a>
-          <p>Сделано в <a href="#">HTML Academy</a> &#169 2016</p>
+          <p>Сделано в <a href="#" class="academy_link">HTML Academy</a> &#169 2016</p>
         </div>
       </div>
     </footer>

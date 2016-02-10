@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <input type="radio" id="btn_1" name="radio_toggle" class="radio_btn" checked>
+    <input type="radio" id="btn_2" name="radio_toggle" class="radio_btn">
+    <input type="radio" id="btn_3" name="radio_toggle" class="radio_btn">
     <div class="site_wrapper">
-      <input type="radio" id="btn_1" name="radio_toggle" class="radio_btn" checked>
-      <input type="radio" id="btn_2" name="radio_toggle" class="radio_btn">
-      <input type="radio" id="btn_3" name="radio_toggle" class="radio_btn">
       <header class="main_header">
         <div class="container  clearfix">
           <img src="img/logo154-64.png" class="main_logo">
@@ -23,15 +23,13 @@
           </nav>
           <div class="user_block">
             <div class="user_block_search">
-              <img src="img/icon/loup.png">
-              <input type="search" class="user_block_search">
+              <div class="search_icon"></div>
+              <input type="search" class="input_block_search">
             </div>
             <div class="user_block_enter">
-              <img src="img/icon/enter21-19.png">
               <a href="#">Вход</a>
             </div>
             <div class="user_block_basket">
-              <img src="img/icon/basket21-20.png">
               <a href="#">Пусто</a>
             </div>
           </div>
@@ -62,15 +60,13 @@
           </div>
         </div>
         <section class="main_actions clearfix">
-          <article class="main_actions_item">
-           <img src="img/straw-back560-229.jpg">
+          <article class="main_actions_item straw_item">
            <h2>Малинка даром!</h2>
            <p>При покупке 2кг любого фруктового мороженого,
              добавим в ваш заказ банку малинового варенья бесплатно</p>
            <a class="btn_style" href="#">Хочу варенье!</a>
          </article>
-         <article class="main_actions_item">
-           <img src="img/choco-back560-229.jpg">
+         <article class="main_actions_item choco_item">
            <h2>Шоколадки даром!</h2>
            <p>При покупки 2кг пломбира, добавим в ваш заказ упаковку
             вкуснейшей шоколадной присыпки совершенно бесплатно</p>
@@ -152,6 +148,7 @@
            </div>
         </div>
       <div class="container_map">
+        <img src="img/map1200-430.jpg">;
         <div class="map_block_address">
           <p>Адрес главного офиса и
              офлайн магазина:</p>
@@ -166,10 +163,10 @@
     <footer class="main_footer">
       <div class="container  clearfix">
         <div class="social_block">
-          <a href="#"><img src="img/icon/twitter39-38.png"></a>
-          <a href="#"><img src="img/icon/insta38-38.png"></a>
-          <a href="#"><img src="img/icon/fb38-38.png"></a>
-          <a href="#"><img src="img/icon/vk38-38.png"></a>
+          <a href="#"><div class="twitter_block"></div></a>
+          <a href="#"><div class="insta_block"></div></a>
+          <a href="#"><div class="fb_block"></div></a>
+          <a href="#"><div class="pasha_block"></div></a>
         </div>
         <div class="documents_block">
             <a href=# class="heart_marker">Для поставщиков</a>
@@ -179,7 +176,7 @@
         </div>
         <div class="academy_block">
           <a href="#"><img src="img/htmllogo108-38.png"></a>
-          <p>Сделано в <a href="#">HTML Academy</a> &#169 2016</p>
+          <p>Сделано в <a href="#" class="academy_link">HTML Academy</a> &#169 2016</p>
         </div>
       </div>
     </footer>
