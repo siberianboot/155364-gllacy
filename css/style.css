@@ -251,6 +251,9 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
 }
+.slider_control_btn:hover {
+  background-color: #b2c1b7;
+}
 .main_actions {
   display: flex;
   justify-content: space-between;
@@ -397,7 +400,7 @@ h3 {
 .shop_blog_subscribe form {
   margin: 0px 0px 0px 30px;
 }
-input[type="text"] {
+.shop_blog_subscribe input[type="text"] {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -406,6 +409,8 @@ input[type="text"] {
   border-radius: 5px;
   border: 1px solid #d3d3d2;
   font-size: 16px;
+  outline: none;
+  padding-left: 10px;
 }
 .btn_style {
   border: none;
@@ -637,14 +642,61 @@ input[type="text"] {
   flex-wrap: wrap;
 }
 .item_container article {
-  width: 270px;
   position: relative;
+  width: 270px;
   margin-bottom: 40px;
   vertical-align: top;
   text-align: center;
+  padding: 8px;
 }
+.item_container .btn_style {
+  display: none;
+}
+.item_container article:hover {
+  background-color: #a7b8ad;
+  border-radius: 15px;
+}
+.item_container article:hover ~ .btn_style {
+  display: block;
+}
+
 .catalog_paging {
   float: right;
+}
+.catalog_paging .pagin_btn {
+  font-size: 16px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 50%;
+  color: white;
+}
+.catalog_paging .paging_active {
+  background-color: white;
+  color: black;
+}
+.catalog_paging .pagin_btn:hover {
+  background-color: #9db1a5;
+}
+.catalog_paging .paging_prev {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #9db1a5;
+  border-bottom: 2px solid #9db1a5;
+  transform: rotateZ(45deg);
+}
+.catalog_paging .paging_next {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotateZ(-135deg);
 }
 .main_navigation .visit_page {
   background-color: #d07058;
@@ -831,4 +883,134 @@ input[type="text"] {
   border: none;
   outline: none;
 
+}
+.catalog_menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 405px;
+  width: 140px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0;
+  box-shadow: 2px 12px 15px 0px #58665e;
+}
+.catalog_menu li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  list-style: none;
+  padding: 5px 0px 5px 0px;
+}
+.catalog_menu li:first-child {
+  font-weight: bold;
+  border-bottom: 1px solid #d1d0ce;
+  margin: 5px 5px 0px 5px;
+}
+.catalog_menu a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  margin-left: 20px;
+}
+.catalog_menu li:hover:nth-of-type(2),
+.catalog_menu li:hover:nth-of-type(3),
+.catalog_menu li:hover:nth-of-type(4),
+.catalog_menu li:hover:nth-of-type(5) {
+  background-color: #fbded7;
+}
+.catalog_menu li:active:nth-of-type(2),
+.catalog_menu li:active:nth-of-type(3),
+.catalog_menu li:active:nth-of-type(4),
+.catalog_menu li:active:nth-of-type(5) {
+  background-color: #f6b5a5;
+}
+.search_popup {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 835px;
+  padding: 15px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  width: 270px;
+  box-shadow: 2px 12px 20px 0px #58665e;
+}
+.search_popup input[type="search"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  outline: none;
+  width: 100%;
+  padding-left: 10px;
+}
+.sign_in_popup {
+  position: absolute;
+  display: none;
+  top: 50px;
+  left: 950px;
+  width: 255px;
+  padding: 15px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 2px 12px 20px 0px #58665e;
+}
+.sign_in_popup input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  outline: none;
+  width: 240px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.sign_in_popup input[type="password"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  outline: none;
+  width: 240px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.sign_in_popup button {
+  width: 100px;
+}
+.sign_in_popup a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #4d4d4d;
+}
+.sign_in_popup a:hover {
+  color: #ffbc9e;
+}
+.signin_help {
+  width: 120px;
+  float: right;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover {
+  border: 2px solid #c7c6c5;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+  border: 2px solid #8fbdec;
+}
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  box-sizing: border-box;
+}
+.js_show_selector {
+  display: block;
 }
