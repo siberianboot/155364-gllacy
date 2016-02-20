@@ -16,21 +16,71 @@
           <img src="img/logo154-64.png" class="main_logo">
           <nav class="main_navigation">
             <ul>
-              <li class="main_navigation_catalog"><a href="#">Каталог</a></li>
+              <li class="main_navigation_catalog"><a href="#">Каталог</a>
+                <div class="sub_catalog_menu">
+                  <ul class="catalog_menu">
+                    <li><a href="#">Новинки</a></li>
+                    <li><a class="sub_menu_btn" href="#">Сливочное</a></li>
+                    <li><a class="sub_menu_btn" href="#">Щербеты</a></li>
+                    <li><a class="sub_menu_btn" href="#">Фруктовый лед</a></li>
+                    <li><a class="sub_menu_btn" href="#">Мелорин</a></li>
+                  </ul>
+                </div>
+              </li>
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О компании</a></li>
             </ul>
           </nav>
           <div class="user_block">
-            <div class="user_block_search">
-              <div class="search_icon"></div>
-              <input type="search" class="input_block_search">
+            <div class="search_icon">
+              <div class="sub_search_popup">
+                <form class="search_popup" action="#" method="post">
+                  <input type="search" placeholder="Что ищем?">
+                </form>
+              </div>
             </div>
             <div class="user_block_enter">
-              <a href="#">Вход</a>
+              <a href="#">Вход
+                <div class="sign_inner">
+                  <form class="sign_in_popup">
+                    <input type="text" placeholder="Электронная почта">
+                    <input type="password" placeholder="Пароль">
+                    <button type="submit" class="btn_style">Войти</button>
+                    <div class="signin_help">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </a>
             </div>
             <div class="user_block_basket">
-              <a href="#">Пусто</a>
+              <a href="#">Пусто
+                <div class="cart_submenu_border">
+                  <div class="cart_submenu clearfix">
+                    <div class="cart_main_cont">
+                      <div class="cart_submenu_choise">
+                        <div class="cancel_btn"></div>
+                        <img src="img/citrus.png" width="35px" height="35px">
+                        <div class="choise_cont_desc">Пломбир с апельсиновым джемом</div>
+                        <div class="choise_cont">1,5 кг <span>x 200 руб.</span></div>
+                        <div class="choise_cont">300руб.</div>
+                      </div>
+                      <div class="cart_submenu_choise">
+                        <div class="cancel_btn"></div>
+                        <img src="img/straw.png" width="35px" height="35px">
+                        <div class="choise_cont_desc">Клубничный пломбир с присыпкой из белого шоколада</div>
+                        <div class="choise_cont">1,5 кг <span>x 300 руб.</span></div>
+                        <div class="choise_cont">450руб.</div>
+                      </div>
+                    </div>
+                    <div class="cart_submenu_order">
+                      <div class="order_price">Итого: 750руб.</div>
+                      <a href="#" class="btn_style">Оформить заказ</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="work_time">
@@ -159,7 +209,7 @@
         </div>
       </div>
     </main>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412389!2d30.32089461595738!3d59.93879686904807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455857308225" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412389!2d30.32089461595738!3d59.93879686904807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455857308225" frameborder="0" style="border:0" allowfullscreen></iframe>
     <footer class="main_footer">
       <div class="container  clearfix">
         <div class="social_block">
@@ -169,10 +219,10 @@
           <a href="#"><div class="pasha_block"></div></a>
         </div>
         <div class="documents_block">
-            <a href=# class="heart_marker">Для поставщиков</a>
-            <a href="#">Наши документы</a>
-            <a href=#>О производстве</a>
-            <a href="#">Экологические стандарты</a>
+          <a href=# class="heart_marker">Для поставщиков</a>
+          <a href="#">Наши документы</a>
+          <a href=#>О производстве</a>
+          <a href="#">Экологические стандарты</a>
         </div>
         <div class="academy_block">
           <a href="#"><img src="img/htmllogo108-38.png"></a>
@@ -181,27 +231,8 @@
       </div>
     </footer>
   </div>
-  <div class="sub_catalog_menu">
-    <ul class="catalog_menu">
-      <li><a href="#">Новинки</a></li>
-      <li><a class="sub_menu_btn" href="#">Сливочное</a></li>
-      <li><a class="sub_menu_btn" href="#">Щербеты</a></li>
-      <li><a class="sub_menu_btn" href="#">Фруктовый лед</a></li>
-      <li><a class="sub_menu_btn" href="#">Мелорин</a></li>
-    </ul>
-  </div>
-  <form class="search_popup">
-    <input type="search" placeholder="Что ищем?">
-  </form>
-  <form class="sign_in_popup">
-    <input type="text" placeholder="Электронная почта">
-    <input type="password" placeholder="Пароль">
-    <button type="submit" class="btn_style">Войти</button>
-    <div class="signin_help">
-      <a href="#">Забыли пароль?</a>
-      <a href="#">Новая регистрация</a>
-    </div>
-  </form>
+  <div class="feedback_block">
+    <form action="#" method="get" class="feedback_form">
   <script src="js/script.js"></script>
  </body>
 </html>
