@@ -52,32 +52,31 @@
             </a>
           </div>
           <div class="user_block_basket">
-            <a href="#"> 2 товара
-              <div class="cart_submenu_border">
-                <div class="cart_submenu clearfix">
-                  <div class="cart_main_cont">
-                    <div class="cart_submenu_choise">
-                      <div class="cancel_btn"></div>
-                      <img src="img/citrus.png" width="35px" height="35px">
-                      <div class="choise_cont_desc">Пломбир с апельсиновым джемом</div>
-                      <div class="choise_cont">1,5 кг <span>x 200 руб.</span></div>
-                      <div class="choise_cont">300руб.</div>
-                    </div>
-                    <div class="cart_submenu_choise">
-                      <div class="cancel_btn"></div>
-                      <img src="img/straw.png" width="35px" height="35px">
-                      <div class="choise_cont_desc">Клубничный пломбир с присыпкой из белого шоколада</div>
-                      <div class="choise_cont">1,5 кг <span>x 300 руб.</span></div>
-                      <div class="choise_cont">450руб.</div>
-                    </div>
+            <div class="cart_submenu_border">
+              <div class="cart_submenu clearfix">
+                <div class="cart_main_cont">
+                  <div class="cart_submenu_choise">
+                    <div class="cancel_btn"></div>
+                    <img src="img/citrus.png" width="35px" height="35px">
+                    <div class="choise_cont_desc">Пломбир с апельсиновым джемом</div>
+                    <div class="choise_cont">1,5 кг <span>x 200 руб.</span></div>
+                    <div class="choise_cont">300руб.</div>
                   </div>
-                  <div class="cart_submenu_order">
-                    <div class="order_price">Итого: 750руб.</div>
-                    <a href="#" class="btn_style">Оформить заказ</a>
+                  <div class="cart_submenu_choise">
+                    <div class="cancel_btn"></div>
+                    <img src="img/straw.png" width="35px" height="35px">
+                    <div class="choise_cont_desc">Клубничный пломбир с присыпкой из белого шоколада</div>
+                    <div class="choise_cont">1,5 кг <span>x 300 руб.</span></div>
+                    <div class="choise_cont">450руб.</div>
                   </div>
                 </div>
+                <div class="cart_submenu_order">
+                  <div class="order_price">Итого: 750руб.</div>
+                  <a href="#" class="btn_style">Оформить заказ</a>
+                </div>
               </div>
-            </a>
+            </div>
+            <a href="#" class="submenu_fullcart">2 товара</a>
           </div>
         </div>
         <div class="work_time">
@@ -97,15 +96,18 @@
         </ul>
       </div>
       <h1>Сливочное мороженое</h1>
-      <form action="#" method="get" class="main_form">
+        <form action="#" method="get" class="main_form">
           <div class="filter_item">
             <h5>Сортировка:</h5>
             <div class="filter_label">
-              <select class="select_styled">
-                <option>по популярности</option>
-                <option>по цене</option>
-                <option>по названию</option>
-              </select>
+              <div class="select_styled">
+                <select>
+                  <option>по популярности</option>
+                  <option>по цене</option>
+                  <option>по названию</option>
+                </select>
+                <span>&#9660;</span>
+              </div>
             </div>
           </div>
           <div class="filter_item">
@@ -139,33 +141,33 @@
               </label>
             </div>
           </div>
-        <div class="filter_item">
-          <h5>Наполнители:</h5>
-          <div class="filter_chbx">
-            <label for="choco_cont">шоколадные
-              <input type="checkbox" id="choco_cont" name="form_chbx_btn" checked>
-              <span class="chbx_indicator"></span>
-            </label>
-            <label for="sugar_cont">сахарные присыпки
-              <input type="checkbox" id="sugar_cont" name="form_chbx_btn" checked>
-              <span class="chbx_indicator"></span>
-            </label>
-            <label for="fruit_cont">фрукты
-              <input type="checkbox" id="fruit_cont" name="form_chbx_btn">
-              <span class="chbx_indicator"></span>
-            </label>
-            <label for="syrup_cont">сироп
-              <input type="checkbox" id="syrup_cont" name="form_chbx_btn">
-              <span class="chbx_indicator"></span>
-            </label>
-            <label for="jam_cont">джем
-              <input type="checkbox" id="jam_cont" name="form_chbx_btn">
-              <span class="chbx_indicator"></span>
-            </label>
+          <div class="filter_item">
+            <h5>Наполнители:</h5>
+            <div class="filter_chbx">
+              <label for="choco_cont">шоколадные
+                <input type="checkbox" id="choco_cont" name="form_chbx_btn" checked>
+                <span class="chbx_indicator"></span>
+              </label>
+              <label for="sugar_cont">сахарные присыпки
+                <input type="checkbox" id="sugar_cont" name="form_chbx_btn" checked>
+                <span class="chbx_indicator"></span>
+              </label>
+              <label for="fruit_cont">фрукты
+                <input type="checkbox" id="fruit_cont" name="form_chbx_btn">
+                <span class="chbx_indicator"></span>
+              </label>
+              <label for="syrup_cont">сироп
+                <input type="checkbox" id="syrup_cont" name="form_chbx_btn">
+                <span class="chbx_indicator"></span>
+              </label>
+              <label for="jam_cont">джем
+                <input type="checkbox" id="jam_cont" name="form_chbx_btn">
+                <span class="chbx_indicator"></span>
+              </label>
+            </div>
           </div>
-        </div>
-        <button type="submit" class="filter_btn">Применить</button>
-      </form>
+          <button type="submit" class="filter_btn">Применить</button>
+        </form>
       <section class="item_container">
         <article class="catalog_item">
           <div class="catalog_inner">
