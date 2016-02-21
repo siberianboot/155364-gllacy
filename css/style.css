@@ -44,6 +44,7 @@ h3 {
   margin-top: 10px;
 }
 .main_navigation > ul > li {
+  position: relative;
   display: inline-block;
   font-weight: bold;
 }
@@ -89,7 +90,11 @@ h3 {
   vertical-align: middle;
   background-color: rgba(255, 255, 255, 0.3);
 }
+.user_block_enter {
+  position: relative;
+}
 .user_block_enter > a {
+  position: relative;
   padding: 7px 15px 7px 10px;
   border-radius: 35px;
 }
@@ -114,6 +119,9 @@ h3 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.user_block_basket {
+  position: relative;
+}
 .user_block_basket > a {
   padding: 7px 35px 7px 10px;
   border-radius: 35px;
@@ -135,11 +143,17 @@ h3 {
   color: black;
 }
 .user_block_basket > a:hover::before {
+  background-image: url('../img/icon/basket-black.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.user_block_basket > a:active::before {
   background-image: url('../img/icon/fullcart.png');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .search_icon {
+  position: relative;
   width: 20px;
   height: 20px;
   background-image: url('../img/icon/loup.png');
@@ -319,6 +333,9 @@ h3 {
   position: relative;
   text-align: center;
 }
+.main_catalog_item .btn_style {
+  display: none;
+}
 .catalog_item .hit_img {
   position: absolute;
 }
@@ -444,11 +461,10 @@ h3 {
 .container_map {
   position: relative;
   height: 430px;
-  border-top: 0.1px solid rgba(1, 1, 1, 0.0);
+  width: 100%
 }
-iframe {
+.container_map iframe {
   position: absolute;
-  bottom: -1650px;
   height: 430px;
   width: 100%;
   z-index: 1;
@@ -456,13 +472,15 @@ iframe {
 .map_block_address {
   position: relative;
   width: 300px;
-  margin: 45px 0px 0px auto;
+  float: right;
+  margin-right: 215px;
+  margin-top: 65px;
   padding: 25px 25px;
   background: white;
   border-radius: 15px;
   color: #343434;
   line-height: 20px;
-  z-index: 10;
+  z-index: 5;
 }
 .map_block_address p {
   font-size: 14px;
@@ -668,6 +686,8 @@ iframe {
 }
 .catalog_inner:hover {
   position: absolute;
+  left: -8px;
+  top: -8px;
   background-color: rgba(167, 184, 173, 0.8);
   border-radius: 15px;
   z-index: 1;
@@ -675,6 +695,9 @@ iframe {
   text-align: center;
   box-shadow: 0px 10px 15px 2px #748a7e;
   padding: 8px 8px 25px 8px;
+}
+.catalog_inner:hover .catalog_price {
+  top: 208px;
 }
 .catalog_inner:hover .btn_style {
   display: block;
@@ -910,8 +933,8 @@ iframe {
 .sub_catalog_menu {
   display: none;
   position: absolute;
-  top: 45px;
-  left: 395px;
+  top: 15px;
+  left: -10px;
   padding: 10px;
 }
 .catalog_menu {
@@ -962,8 +985,8 @@ iframe {
 .search_icon > .sub_search_popup {
   display: none;
   position: absolute;
-  top: 50px;
-  left: 820px;
+  top: 30px;
+  left: -275px;
   padding: 10px;
 }
 .search_popup {
@@ -989,8 +1012,8 @@ iframe {
 .sign_inner {
   position: absolute;
   display: none;
-  top: 50px;
-  left: 940px;
+  top: 25px;
+  left: -205px;
   padding: 10px;
   z-index: 1;
 }
@@ -1061,20 +1084,20 @@ input[type="search"] {
 .user_block_enter:hover .sign_inner {
   display: block;
 }
-.main_footer .container {
+.main_footer {
   border-top: 1px solid #a9bbb1;
 }
 .cart_submenu_border {
   display: none;
   position: absolute;
   padding: 20px;
-  top: 45px;
-  left: 660px;
+  top: 15px;
+  left: -460px;
   z-index: 1;
 }
 .cart_submenu {
   position: relative;
-  width: 660px;
+  width: 530px;
   padding: 25px 15px 20px 15px;
   background-color: white;
   border-radius: 5px;
@@ -1085,23 +1108,28 @@ input[type="search"] {
 }
 .cart_submenu div,
 .cart_submenu img {
+  font-size: 13px;
+  color: black;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .cart_submenu img {
   margin: 0px 15px 0px 15px;
 }
 .cart_submenu .choise_cont {
-  margin-right: 35px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 18px;
 }
 .choise_cont span {
   color: #7f7f7f;
 }
 .cart_submenu .choise_cont_desc {
   margin-right: 35px;
-  width: 280px;
+  width: 220px;
 }
 .cancel_btn {
+  margin-top: 10px;
   width: 17px;
   height: 17px;
   cursor: pointer;
@@ -1112,7 +1140,7 @@ input[type="search"] {
   left: 22px;
   content: '';
   height: 15px;
-  width: 2px;
+  width: 1px;
   background-color: #434342;
 }
 .cancel_btn::before {
@@ -1129,6 +1157,7 @@ input[type="search"] {
 }
 .cart_submenu_order .order_price {
   font-weight: bold;
+  font-size: 15px;
   margin: 15px 0px 15px 55px;
 }
 .cart_submenu_order a {
